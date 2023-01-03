@@ -1,0 +1,82 @@
+.listFiveWeather_date{
+    height: 20%;
+    width: 20%;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    line-height: 0px;
+    padding-top: 16px;
+    padding-bottom: 7px;
+}
+
+.temp{
+    font-size: 140px;
+    color: white;
+    font-weight: 700;
+    line-height: 80%;  
+}
+
+.text{
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+}
+
+.weatherType{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.iconWeather {
+    width: 50px;
+}
+
+.label {
+    width: 100px;
+}
+
+.temp_week{
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+}
+
+.listFiveWeatherFont{
+    font-size: 12px;
+}
+
+.weekDay{
+    font-size: 25px;
+}
+
+
+.requestTitleElement{
+    margin: 10px 0px 10px 0px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.requestElement{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.listFiveWeatherWrapper {
+    align-items: center;
+    display: contents;
+}
+
+.bg {
+    background-image: url("/asset/bg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}

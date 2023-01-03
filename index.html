@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+        <header class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2 fw-bold">WeatherApp</a>
+                <form class="d-flex forma">
+                    <input class="form-control me-2 inputSearchCity" type="text" placeholder="Search city" aria-label="Search">
+                    <button class="btn btn-primary header_button" type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+        <main class="container-fluid">
+            <section class="row align-items-md-stretch">
+                <div class="col-md-8">
+                    <div class="h-100 p-5 text-white bg-dark bg rounded-3">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="day px-1"></div>
+                                <div class="date px-1"></div>
+                                <div class="time px-2"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-2 align-items-end">
+                            <div class="me-3">
+                                <div class="temp"></div>
+                            </div>
+                            <div>
+                                <span class="text">Weather today in:</span>
+                                <div class="city"></div>
+                                <img class="iconWeather" alt="weatherImg">
+                                <div class="weatherType"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <table class="mt-4">
+                                <tr>
+                                    <td class="label">Pressure</td>
+                                    <td class="value pressure"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Humidity</td>
+                                    <td class="value humidity"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Wind speed</td>
+                                    <td class="value wind"></td>
+                                </tr>
+                            </table>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 p-4 bg-light border rounded-3">
+                        <h5>Search history</h5>
+                        <div class="requestList">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="h-100 p-4 bg-light border rounded-3 mt-4">
+                    <h5>Weather for the week</h5>
+                    <div class="d-flex justify-content-center listFiveWeather"></div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="my-5 container-fluid ">
+            Weather App - developed by <a href="https://github.com/strelchenko-git" class="link">Evgeny Strelchenko</a>
+        </footer>
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/fiveDays.js"></script>
+    <script src="js/infoWidget.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
